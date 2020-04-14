@@ -49,7 +49,8 @@ function! lf#LF(path, edit_cmd)
       endfunction
       set guioptions+=! " Make it work with MacVim
       let currentPath = expand(a:path)
-      let buf = term_start(["lf", '-selection-path='.s:choice_file_path, '"'.currentPath.'"'], #{hidden: 1, term_finish: 'close'})
+      echom 'lf -selection-path=' . s:choice_file_path . ' "' . currentPath . '"'
+      let buf = term_start('lf -selection-path=' . s:choice_file_path . ' "' . currentPath . '"', #{hidden: 1, term_finish: 'close'})
       let winid = popup_dialog(buf, #{minwidth: 150, minheight: 20, highlight: 'Normal'})
       let bufn = winbufnr(winid)
       exe 'autocmd! BufWinLeave <buffer='.bufn.'> call s:EditCallback()'
