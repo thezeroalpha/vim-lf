@@ -1,3 +1,8 @@
+if exists('g:loaded_lf_autoload')
+  finish
+endif
+let g:loaded_lf_autoload = 1
+
 function! lf#LF(path, edit_cmd)
   let oldguioptions = &guioptions
   let s:oldlaststatus = &laststatus
