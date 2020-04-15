@@ -1,4 +1,4 @@
-if exists('g:loaded_lf') || &cp
+if exists('g:loaded_lf') || &cp || v:version < 802
   finish
 endif
 let g:loaded_lf = 1
