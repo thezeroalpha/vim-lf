@@ -23,5 +23,9 @@ The plugin exposes two normal mode mappings:
 
 There are no default mappings (by design, so as not to force mappings on users), so you need to map these `<Plug>`s yourself.
 
+**Disclaimer:** this code is not extensively tested.
+It works for me, running Vim 8.2 in the terminal on macOS, but it's not guaranteed to work for others.
+It might not work in Neovim, as I don't use Neovim.
+
 ## Acknowledgements
 Inspired by [ptzz/lf.vim](https://github.com/ptzz/lf.vim) and lf's [Vim plugin](https://github.com/gokcehan/lf/blob/master/etc/lf.vim).
