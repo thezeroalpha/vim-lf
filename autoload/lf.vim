@@ -39,13 +39,14 @@ function! lf#LF(path, edit_cmd)
         if filereadable(s:choice_file_path)
           for f in readfile(s:choice_file_path)
             exec s:edit_cmd . f
+            filetype detect
           endfor
           call delete(s:choice_file_path)
         endif
         redraw!
         " reset the filetype to fix the issue that happens
         " when opening lf on VimEnter (with `vim .`)
-        filetype detect
+        " filetype detect
       endfunction
       set guioptions+=! " Make it work with MacVim
       let currentPath = expand(a:path)
