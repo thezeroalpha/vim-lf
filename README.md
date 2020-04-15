@@ -1,8 +1,14 @@
 # vim-lf: lf integration for Vim 8.2
+## Demo
+<video width="50%" style="margin-bottom: 1em;" controls loop playsinline muted>
+    <source type="video/mp4" src="demo.mp4" />
+    <p>Demo of lf integration in Vim</p>
+</video>
+
 ## Why?
 Sometimes I need to visually browse through the folder hierarchy to find the file I'm looking for.
 In the shell, I use [lf](https://github.com/gokcehan/lf) as a terminal file manager, so I have lots of aliases and commands set up in lf.
-In Vim, I generally use netrw or [fzf](https://github.com/junegunn/fzf) to select files, but from time to time I wanted to browse or select files in lf.
+In Vim, I generally use netrw or [fzf](https://github.com/junegunn/fzf) to select files, but from time to time I wanted to browse or select files in lf, especially since I also have [rupa/z](https://github.com/rupa/z) integrated into lf.
 
 I initially looked at [ptzz/lf.vim](https://github.com/ptzz/lf.vim), but I did not like that it used a hard-coded file path to store the selected file instead of Vim's `tempname()`.
 I also didn't like its configuration style, which is based on global variables.
