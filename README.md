@@ -1,9 +1,5 @@
 # vim-lf: lf integration for Vim 8.2
-## Demo
-<video width="50%" style="margin-bottom: 1em;" controls loop playsinline muted>
-    <source type="video/mp4" src="demo.mp4" />
-    <p>Demo of lf integration in Vim</p>
-</video>
+![Demo of lf integration in Vim](demo.gif)
 
 ## Why?
 Sometimes I need to visually browse through the folder hierarchy to find the file I'm looking for.
