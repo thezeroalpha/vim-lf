@@ -44,6 +44,7 @@ function! lf#LF(path, edit_cmd)
       if filereadable(s:choice_file_path)
         for f in readfile(s:choice_file_path)
           exec s:edit_cmd . f
+          filetype detect
         endfor
         call delete(s:choice_file_path)
       endif
