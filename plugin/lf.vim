@@ -6,7 +6,7 @@ let g:loaded_lf = 1
 let s:cpo_save = &cpo
 set cpo&vim
 
-command! -nargs=+ LF call lf#LF(<f-args>)
+command! -nargs=+ LF call lf#LF(<f-args>, [])
 nnoremap <Plug>LfEdit :LF %:p edit<CR>
 nnoremap <Plug>LfSplit :LF %:p split<CR>
 
