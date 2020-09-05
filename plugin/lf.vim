@@ -1,4 +1,4 @@
-if exists('g:loaded_lf') || &cp || v:version < 802
+if exists('g:loaded_lf') || &cp || (v:version < 802 && ! has('nvim'))
   finish
 endif
 let g:loaded_lf = 1
